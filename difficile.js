@@ -124,7 +124,7 @@ function selectTile() {
          win += 1;
 
       }
-      else {
+      if (solution[r][c] != numSelected.id) {
          ereurs += 1;
          document.querySelector("#errors").innerText = ereurs;
       }
@@ -132,10 +132,4 @@ function selectTile() {
          fireworks.start();  
       }
    }
-}
-function verify () {
-   if (solution == board) {
-      console.log("ok");
-   }
-   
 }

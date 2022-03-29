@@ -125,7 +125,7 @@ function selectTile() {
          this.innerText = numSelected.id;
 
       }
-      else {
+      if (solution[r][c] != numSelected.id) {
          ereurs += 1;
          document.querySelector("#errors").innerText = ereurs;
       }

@@ -129,13 +129,14 @@ function selectTile() {
          this.innerText = numSelected.id;
          win += 1;
       }
-      if (win == 53) {
-         fireworks.start();  
-      }
+     
    
-      else {
+      if (solution[r][c] != numSelected.id) {
          ereurs += 1;
          document.querySelector("#errors").innerText = ereurs;
+      }
+      if (win == 53) {
+         fireworks.start();  
       }
 
    }
